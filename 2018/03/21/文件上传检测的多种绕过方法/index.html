@@ -1,0 +1,709 @@
+<!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon1.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="&#x672C;&#x6587;&#x5305;&#x542B;&#x591A;&#x79CD;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x5DE5;&#x5177;&#x4E3A;Burp">
+<meta name="keywords" content="&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x7684;&#x591A;&#x79CD;&#x65B9;&#x6CD5;">
+<meta property="og:url" content="http://yoursite.com/2018/03/21/&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x68C0;&#x6D4B;&#x7684;&#x591A;&#x79CD;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;/index.html">
+<meta property="og:site_name" content="Mr.Z">
+<meta property="og:description" content="&#x672C;&#x6587;&#x5305;&#x542B;&#x591A;&#x79CD;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x5DE5;&#x5177;&#x4E3A;Burp">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20180321104949475?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfNDEyMTc5NTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-03-21T02:56:26.233Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x7684;&#x591A;&#x79CD;&#x65B9;&#x6CD5;">
+<meta name="twitter:description" content="&#x672C;&#x6587;&#x5305;&#x542B;&#x591A;&#x79CD;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x5DE5;&#x5177;&#x4E3A;Burp">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180321104949475?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfNDEyMTc5NTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/21/&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x68C0;&#x6D4B;&#x7684;&#x591A;&#x79CD;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;/">
+
+
+
+
+
+  <title>&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x7684;&#x591A;&#x79CD;&#x65B9;&#x6CD5; | Mr.Z</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">undefined
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	
+	<a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mr.Z</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/21/&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x68C0;&#x6D4B;&#x7684;&#x591A;&#x79CD;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Z">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Z">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x7684;&#x591A;&#x79CD;&#x65B9;&#x6CD5;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+              
+              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-03-21T11:00:00+08:00">
+                2018-03-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  &#x672C;&#x6587;&#x5305;&#x542B;&#x591A;&#x79CD;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x5DE5;&#x5177;&#x4E3A;Burp
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>0x01: &#x524D;&#x53F0;&#x811A;&#x672C;&#x68C0;&#x6D4B;&#x6269;&#x5C55;&#x540D;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x5F53;&#x7528;&#x6237;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x9009;&#x62E9;&#x6587;&#x4EF6;&#x70B9;&#x51FB;&#x4E0A;&#x4F20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x8FD8;&#x6CA1;&#x6709;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x6D88;&#x606F;&#xFF0C;&#x5C31;&#x5BF9;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x79F0;&#x4E3A;&#x524D;&#x53F0;&#x811A;&#x672C;&#x68C0;&#x6D4B;&#x6269;&#x5C55;&#x540D;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x7ED5;&#x8FC7;&#x524D;&#x53F0;&#x811A;&#x672C;&#x68C0;&#x6D4B;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x5C31;&#x662F;&#x5C06;&#x6240;&#x8981;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x66F4;&#x6539;&#x4E3A;&#x7B26;&#x5408;&#x811A;&#x672C;&#x68C0;&#x6D4B;&#x89C4;&#x5219;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x901A;&#x8FC7;BurpSuite&#x5DE5;&#x5177;&#xFF0C;&#x622A;&#x53D6;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x5E76;&#x5C06;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x66F4;&#x6539;&#x56DE;&#x539F;&#x6765;&#x7684;&#xFF0C;&#x8FBE;&#x5230;&#x7ED5;&#x8FC7;&#x7684;&#x76EE;&#x7684;&#x3002;<br>&#x4F8B;&#x5982;:&#x6587;&#x4EF6;&#x540D;&#x672C;&#x6765;&#x4E3A;&#x3010;evil.jpg&#x3011;&#xFF0C;&#x4E0A;&#x4F20;&#x65F6;&#xFF0C;&#x7528;BurpSuite&#x622A;&#x5305;&#x540E;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x7684;&#x540D;&#x5B57;&#x6539;&#x4E3A;&#x3010;evil.php&#x3011;(&#x6216;&#x5176;&#x5B83;&#x811A;&#x672C;&#x7C7B;&#x578B;)&#x5373;&#x53EF;&#x3002;</p>
+<hr>
+<p><strong>0x02: Content-Type&#x68C0;&#x6D4B;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x8BF4;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;Content-Type&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x767D;&#x540D;&#x5355;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4E0A;&#x4F20;&#xFF0C;&#x5426;&#x5219;&#x4E0A;&#x4F20;&#x5931;&#x8D25;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x7ED5;&#x8FC7;Content&#x2013;Type&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x68C0;&#x6D4B;&#xFF0C;&#x5C31;&#x662F;&#x7528;BurpSuite&#x622A;&#x53D6;&#x5E76;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x6587;&#x4EF6;&#x7684;Content-Type&#x7C7B;&#x578B;(&#x5982;&#x6539;&#x4E3A;:image/gif)&#xFF0C;&#x4F7F;&#x5176;&#x7B26;&#x5408;&#x767D;&#x540D;&#x5355;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x8FBE;&#x5230;&#x4E0A;&#x4F20;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<p><strong>0x03: &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;00&#x622A;&#x65AD;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x5728;&#x4E0A;&#x4F20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F53;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x5230;&#x3010;0x00&#x3011;&#x65F6;&#xFF0C;&#x4F1A;&#x8BA4;&#x4E3A;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#x3002;&#x5229;&#x7528;00&#x622A;&#x65AD;&#x5C31;&#x662F;&#x5229;&#x7528;&#x7A0B;&#x5E8F;&#x5458;&#x5728;&#x5199;&#x7A0B;&#x5E8F;&#x65F6;&#x5BF9;&#x6587;&#x4EF6;&#x7684;&#x4E0A;&#x4F20;&#x8DEF;&#x5F84;&#x8FC7;&#x6EE4;&#x4E0D;&#x4E25;&#x683C;&#xFF0C;&#x4EA7;&#x751F;0x00&#x4E0A;&#x4F20;&#x622A;&#x65AD;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x901A;&#x8FC7;&#x6293;&#x5305;&#x622A;&#x65AD;&#x5C06;&#x3010;evil.php.jpg&#x3011;&#x540E;&#x9762;&#x7684;&#x4E00;&#x4E2A;&#x3010;.&#x3011;&#x6362;&#x6210;&#x3010;0x00&#x3011;&#x3002;&#x5728;&#x4E0A;&#x4F20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F53;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x5230;&#x3010;0x00&#x3011;&#x65F6;&#xFF0C;&#x4F1A;&#x8BA4;&#x4E3A;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#xFF0C;&#x4ECE;&#x800C;&#x5C06;&#x3010;evil.php.jpg&#x3011;&#x7684;&#x5185;&#x5BB9;&#x5199;&#x5165;&#x5230;&#x3010;evil.php&#x3011;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x653B;&#x51FB;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<p><strong>0x04: &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6269;&#x5C55;&#x540D;&#x68C0;&#x6D4B;&#x9ED1;&#x540D;&#x5355;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x5C06;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4F1A;&#x6839;&#x636E;&#x8BBE;&#x5B9A;&#x7684;&#x9ED1;&#x767D;&#x540D;&#x5355;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4EA4;&#x4E0A;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#xFF0C;&#x5982;&#x679C;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x4E0D;&#x7B26;&#x5408;&#x9ED1;&#x767D;&#x540D;&#x5355;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x5219;&#x4E0D;&#x4E88;&#x4E0A;&#x4F20;&#xFF0C;&#x5426;&#x5219;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x5C06;&#x4E00;&#x53E5;&#x8BDD;&#x6728;&#x9A6C;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3010;evil.php&#x3011;&#xFF0C;&#x6539;&#x6210;&#x3010;evil.php.abc&#x3011;(&#x5947;&#x602A;&#x7684;&#x4E0D;&#x88AB;&#x89E3;&#x6790;&#x7684;&#x540E;&#x7F00;&#x540D;&#x90FD;&#x884C;)&#x3002;&#x9996;&#x5148;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x9A8C;&#x8BC1;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9A8C;&#x8BC1;&#x7684;&#x662F;&#x3010;.abc&#x3011;&#xFF0C;&#x53EA;&#x8981;&#x8BE5;&#x6269;&#x5C55;&#x540D;&#x7B26;&#x5408;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x9ED1;&#x767D;&#x540D;&#x5355;&#x89C4;&#x5219;&#xFF0C;&#x5373;&#x53EF;&#x4E0A;&#x4F20;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5F53;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x8BBF;&#x95EE;&#x8BE5;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;Apache&#x5982;&#x679C;&#x89E3;&#x6790;&#x4E0D;&#x4E86;&#x3010;.abc&#x3011;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x4F1A;&#x5411;&#x524D;&#x5BFB;&#x627E;&#x53EF;&#x89E3;&#x6790;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x5373;&#x3010;.php&#x3011;</p>
+<p><strong>0x05: JS&#x68C0;&#x6D4B;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5BF9;&#x65B9;&#x4F7F;&#x7528;JavaScript&#x8BED;&#x53E5;&#x8BED;&#x6CD5;&#x68C0;&#x6D4B;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x5408;&#x6CD5;&#x6027;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x5728;&#x672C;&#x5730;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x7981;&#x7528;JS&#x5373;&#x53EF;&#x3002;&#x53EF;&#x4F7F;&#x7528;&#x706B;&#x72D0;&#x6D4F;&#x89C8;&#x5668;&#x7684;NoScript&#x63D2;&#x4EF6;&#x3001;IE&#x4E2D;&#x7981;&#x7528;&#x6389;JS&#x7B49;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x3002;</p>
+<p><strong>0x06: &#x91CD;&#x5199;&#x89E3;&#x6790;&#x89C4;&#x5219;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x4E0A;&#x4F20;&#x8986;&#x76D6;.htaccess&#x6587;&#x4EF6;&#xFF0C;&#x91CD;&#x5199;&#x89E3;&#x6790;&#x89C4;&#x5219;&#xFF0C;&#x5C06;&#x4E0A;&#x4F20;&#x7684;&#x5E26;&#x6709;&#x811A;&#x672C;&#x9A6C;&#x7684;&#x56FE;&#x7247;&#x4EE5;&#x811A;&#x672C;&#x65B9;&#x5F0F;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<p>&#x5728;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;.htaccess&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5148;&#x4E0A;&#x4F20;.htaccess&#x6587;&#x4EF6;&#xFF0C;&#x8986;&#x76D6;&#x6389;&#x539F;&#x5148;&#x7684;.htaccess&#x6587;&#x4EF6;&#xFF1B;&#x518D;&#x4E0A;&#x4F20;&#x3010;evil.gif&#x3011;&#x6587;&#x4EF6;&#x3002;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7684;.htaccess&#x8BED;&#x53E5;&#xFF0C;&#x5373;&#x53EF;&#x5C06;&#x3010;evil.gif&#x3011;&#x6587;&#x4EF6;&#x4EE5;php&#x811A;&#x672C;&#x65B9;&#x5F0F;&#x89E3;&#x6790;&#x3002;</p>
+<p><img src="http://img.blog.csdn.net/20180321104949475?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfNDEyMTc5NTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p><strong>0x07: &#x5176;&#x5B83;&#x65B9;&#x5F0F;&#x2014;&#x7ED5;&#x8FC7;</strong></p>
+<p>&#x539F;&#x7406;</p>
+<p>&#x90E8;&#x5206;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x601D;&#x7EF4;&#x4E0D;&#x4E25;&#x8C28;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x4E0D;&#x5B8C;&#x5584;&#x7684;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5408;&#x6CD5;&#x6027;&#x68C0;&#x6D4B;&#x624B;&#x6BB5;&#xFF0C;&#x5BFC;&#x81F4;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;&#x5176;&#x68C0;&#x6D4B;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;</p>
+<ol>
+<li><p>&#x540E;&#x7F00;&#x540D;&#x5927;&#x5C0F;&#x5199;&#x7ED5;&#x8FC7;<br>&#x7528;&#x4E8E;&#x53EA;&#x5C06;&#x5C0F;&#x5199;&#x7684;&#x811A;&#x672C;&#x540E;&#x7F00;&#x540D;(&#x5982;php)&#x8FC7;&#x6EE4;&#x6389;&#x7684;&#x573A;&#x5408;&#xFF1B;<br>&#x4F8B;&#x5982;:&#x5C06;Burpsuite&#x622A;&#x83B7;&#x7684;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3010;evil.php&#x3011;&#x6539;&#x4E3A;&#x3010;evil.Php&#x3011;</p>
+</li>
+<li><p>&#x53CC;&#x5199;&#x540E;&#x7F00;&#x540D;&#x7ED5;&#x8FC7;<br>&#x7528;&#x4E8E;&#x53EA;&#x5C06;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#x201D;php&#x201D;&#x5B57;&#x7B26;&#x4E32;&#x8FC7;&#x6EE4;&#x7684;&#x573A;&#x5408;&#xFF1B;<br>&#x4F8B;&#x5982;:&#x4E0A;&#x4F20;&#x65F6;&#x5C06;Burpsuite&#x622A;&#x83B7;&#x7684;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x6587;&#x4EF6;&#x540D;&#x3010;evil.php&#x3011;&#x6539;&#x4E3A;&#x3010;evil.pphphp&#x3011;&#xFF0C;&#x90A3;&#x4E48;&#x8FC7;&#x6EE4;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x201D;php&#x201D;&#x5B57;&#x7B26;&#x4E32;&#x201D;&#x540E;&#xFF0C;&#x5F00;&#x5934;&#x7684;&#x2019;p&#x2019;&#x548C;&#x7ED3;&#x5C3E;&#x7684;&#x2019;hp&#x2019;&#x5C31;&#x7EC4;&#x5408;&#x53C8;&#x5F62;&#x6210;&#x4E86;&#x3010;php&#x3011;&#x3002;</p>
+</li>
+<li><p>&#x7279;&#x6B8A;&#x540E;&#x7F00;&#x540D;&#x7ED5;&#x8FC7;<br>&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x6587;&#x4EF6;&#x5408;&#x6CD5;&#x6027;&#x7684;&#x811A;&#x672C;&#x6709;&#x95EE;&#x9898;&#x7684;&#x573A;&#x5408;&#xFF1B;<br>&#x4F8B;&#x5982;:&#x5C06;Burpsuite&#x622A;&#x83B7;&#x7684;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x3010;evil.php&#x3011;&#x540D;&#x5B57;&#x6539;&#x4E3A;&#x3010;evil.php6&#x3011;&#xFF0C;&#x6216;&#x52A0;&#x4E2A;&#x7A7A;&#x683C;&#x6539;&#x4E3A;&#x3010;evil.php &#x3011;</p>
+</li>
+</ol>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":70,"height":140,"position":"right","hOffset":0,"vOffset":-30},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/&#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;/" rel="tag"># &#x4E0A;&#x4F20;&#x7ED5;&#x8FC7;</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/20/First Post -- Burp&#x7206;&#x7834;/" rel="next" title="First Post -- Burp&#x7206;&#x7834;">
+                <i class="fa fa-chevron-left"></i> First Post -- Burp&#x7206;&#x7834;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Mr.Z</p>
+              <p class="site-description motion-element" itemprop="description">&#x8FFD;&#x6C42;&#x5353;&#x8D8A;&#xFF0C;&#x6210;&#x529F;&#x5C31;&#x4F1A;&#x51FA;&#x5176;&#x4E0D;&#x610F;&#x627E;&#x4E0A;&#x95E8;&#x3002;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.Z</span>
+
+  
+</div>
+
+
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  
+  <div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  &#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570;:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+  
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<script type="text/javascript" src="/js/src/love.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":70,"height":140,"position":"right","hOffset":0,"vOffset":-30},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script></body></html><!-- 页面点击小红心 -->
